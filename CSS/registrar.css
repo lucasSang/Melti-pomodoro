@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(#92E3FF, #5190B3);
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+#background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    scale: 0.2;
+}
+
+#passaro {
+    position: absolute;
+    bottom: 150%;
+    left: 70%;
+}
+
+#nuvem1 {
+    position: absolute;
+    scale: 1.1;
+    bottom: 175%;
+    right: 125%;
+}
+
+#nuvem2 {
+    position: absolute;
+    scale: 1.1;
+    top: 150%;
+    left: 100%;
+}
+
+#fundo_hud {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+    background-color: rgba(230, 230, 230, 0.5);
+    width: 42.5vw;
+    height: 72.5vh;
+    border-radius: 2rem;
+    box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.25);
+}
+
+#fundo_hud h1 {
+    font-family: "Arbutus Slab", serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #003756;
+}
+
+#infos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+#infos input[type=submit] {
+    background-color: #F2F2F2;
+    border: rgba(0, 0, 0, 0.5) 1px solid;
+    border-radius: 8px;
+    width: 8vw;
+    height: 5vh;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    color: #294351;
+    font-size: 1.15rem;
+    font-weight: 700;
+    transition: all 0.25s;
+}
+
+#infos input[type=submit]:hover {
+    cursor: pointer;
+    background-color: #e0e0e0;
+}
+
+.inserir_dados {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.inserir_dados label {
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    padding-left: 0.5rem;
+}
+
+.inserir_dados input {
+    background-color: #F6F6F6;
+    border: rgba(0, 0, 0, 0.5) 1px solid;
+    border-radius: 8px;
+    width: 30vw;
+    height: 4vh;
+    padding: 0.5rem;
+}
+
+#tem_conta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Inter", sans-serif;
+    gap: 0.5rem;
+}
+
+#tem_conta h3 {
+    color: #355667;
+    font-size: 1.1rem;
+}
+
+#tem_conta a {
+    color: #E8E8E8;
+    font-size: 0.95rem;
+    font-weight: 400;
+}
+
+#login_secundarios {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: -0.75rem;
+}
+
+#login_secundarios img {
+    scale: 0.5;
+}
+
+/* porque caralhos tem um """generic""" por cima do botao eu nao consigo apertar pra criar conta por causa dessa merda, 
+se tu tiver vendo isso lobato saiba que eu quero me matar 
+*/
+#infos, #infos input[type=submit] {
+    position: relative;
+    z-index: 10;
+}

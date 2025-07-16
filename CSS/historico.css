@@ -1,0 +1,79 @@
+body {
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(#91E2FF, #51A8D5);
+  color: #1D638B;
+  height: 200vh;
+  margin: 0;
+  padding: 0;
+}
+header a button{
+  margin-right:2rem;
+  background:#51A8D5;
+  color:#fff;
+  border-radius:8px;
+  border:none;
+  padding:0.5rem 1.5rem;
+  font-size:1rem;
+  cursor:pointer;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0 2rem 2rem;
+}
+header button {
+  position: absolute;
+  top: 3.5rem;
+  left: 2rem;
+  border: none;
+  background: none;
+  color: #1D638B; 
+  font-size: 2rem;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+#historico-timers {
+  max-width: 700px;
+  margin: 2rem auto;
+  background: #EAF4FF;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  padding: 2rem;
+}
+.timer-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #51A8D5;
+  padding: 1rem 0;
+}
+.timer-item:last-child {
+  border-bottom: none;
+}
+.timer-nome {
+  font-weight: bold;
+}
+.timer-status {
+  padding: 0.3rem 1rem;
+  border-radius: 1rem;
+  font-size: 0.9rem;
+}
+.timer-status.complete {
+  background: #51A8D5;
+  color: #fff;
+}
+.timer-status.incomplete {
+  background: #FA6F71;
+  color: #fff;
+}
+.timer-cor {
+  margin-left: 1rem;
+  vertical-align: middle;
+}

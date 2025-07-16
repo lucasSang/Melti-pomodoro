@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Arbutus+Slab&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    </style>
+
+    <link rel="stylesheet" href="./css/timer.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melti - Timer</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img id="logo" src="Imagens/Logo.png" alt="Logo Melti">
+        </a>
+
+        <a href="historico.html" target="_blank" id="btn-historico">
+            <img src="./Imagens/Vector.png" alt="Ampulheta">
+        </a>
+    </header>
+    <main>
+        <div id="name_task">
+            <h1 id="taskTitle" style="display:none;">Task name</h1>
+        </div>
+
+        <div class="settings-modal__container" popover id="settings-modal">
+            <div class="settings-modal__header">
+                <h3>Opções</h3>
+                <button class="settings-modal__close" popovertarget="settings-modal" popovertargetaction="hide">
+                </button>
+            </div>
+            <div class="settings-modal__settings-wrap">
+                <div class="settings-modal__row-wrap">
+                    <h4>Nome da Task</h4>
+                    <div class="settings-modal__inputs-wrap settings-modal__inputs-wrap--top-spacer">
+                        <input type="text" id="taskInput" name="taskInput" placeholder="Task" required>
+                    </div>
+                </div>
+                <div class="settings-modal__row-wrap">
+                    <h4>Timer (Minutos)</h4>
+                    <div class="settings-modal__inputs-wrap settings-modal__inputs-wrap--top-spacer">
+                        <input type="number" id="pomodoro" name="pomodoro" value="25" min="1" required>
+                    </div>
+                </div>
+                
+                <div class="settings-modal__row-wrap settings-modal__row-wrap--inline">
+                    <h4>Cor da task</h4>
+                    <div class="settings-modal__inputs-wrap">
+                        <select id="cor" name="cor" required></select>
+                    </div>
+                </div>
+            </div>
+            <button class="settings-modal__btn">Apply</button>
+        </div>
+
+        <section id="timer_hud">
+            <div>
+                <div id="timer">
+                    <img src="Imagens/Gelo.png" alt="Gelo Timer">
+                    <button type="button" popovertarget="settings-modal"><p popovertarget="settings-modal">00:00</p></button>
+                </div>
+                <div id="buttons">
+                
+                    
+                    <div class="button">
+                        <a href="#" onclick="return false;"><img src="Imagens/Play.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./js/timer.js"></script>
+</body>
+</html>
