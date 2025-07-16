@@ -76,7 +76,7 @@ function startTimer(seconds, timerId) {
 function displayTimeLeft(seconds) {
   const minutes = Math.floor(seconds / 60);
   const secondsRemaining = seconds % 60;
-  timerDisplay.textContent = `${minutes}:${secondsRemaining < 10 ? "00" : ""}${secondsRemaining}`;
+  timerDisplay.textContent = `${minutes}:${secondsRemaining < 10 ? "0" : ""}${secondsRemaining}`;
 }
 
 

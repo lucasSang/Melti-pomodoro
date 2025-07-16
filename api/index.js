@@ -16,7 +16,7 @@ import express from 'express'
       host: '127.0.0.1',
       port: 3306,
       user: 'root',
-      password: '',
+      password: 'wLXGm.r>3',
       database: 'melti_db',
     },
   });
